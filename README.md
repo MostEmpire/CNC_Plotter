@@ -25,7 +25,7 @@ TO MAKE IT JUST WORK:
 4. Open the project file (.ino file)
 5. Compile to the board with the button and wait.
 6. Close the compiler (COM for the arduino must be free)
-7. Run the bat from the root of rekease folder, or run the jar file with administrator privileges
+7. Run the bat from the root of release folder, or run the jar file with administrator privileges
    (Natives loading error.. Stupid stuff.)
 8. Choose your CNC COM port and play with buttons, or load an available image.
 
