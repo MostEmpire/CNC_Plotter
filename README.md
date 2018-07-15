@@ -2,7 +2,10 @@
 Software for creation of images using arduino controller and stepper motors
 
 So since it was pretty difficult to find a working instructable for a cnc plotter, with software and compatible Gcode images,
-here I give it all for you.
+here I give it all for you. This works for a project with arduino board and an L293D servo controller plug board.
+
+Hadware-wise, arduino-uno pins PCINT12 and PCINT13 are used as a pull down motor home position switches I think. Look at the source
+in branch Arduino-Program.
 
 This repository is composed of two main parts:
 1. Software for the arduino controller board
@@ -22,8 +25,14 @@ TO MAKE IT JUST WORK:
 4. Open the project file (.ino file)
 5. Compile to the board with the button and wait.
 6. Close the compiler (COM for the arduino must be free)
-7. Run the bat from "Program to PC" folder, or run the jar file with administrator privileges (Natives loading error.. Stupid stuff.)
-8. Choose your CNC COM port and play with buttons.
+7. Run the bat from the root of rekease folder, or run the jar file with administrator privileges
+   (Natives loading error.. Stupid stuff.)
+8. Choose your CNC COM port and play with buttons, or load an available image.
+
+TO MAKE YOUR OWN IMAGE:
+Use InkScape program and export the result as G-Code.
+Video here (Sorry, I'm lazy now): https://www.youtube.com/watch?v=bbe56S_O-uI
+If InkScape reports weird error, use older version of this program. You can search in which release it was not a case and use that.
 
 Multiple instances can control more CNC plotters from one computer.
 
